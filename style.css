@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Rowdies:wght@300;400;700&family=Secular+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+
+}
+header{
+    background-color: white ;
+    display: flex;
+    color: black;
+    flex-direction: column;
+}
+.cntrHeaderSuperios{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px 0px;
+}
+.nomeMarca{
+    padding: 14px 100px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+}
+.nomeMarca .factory{
+    color: #c50302;
+}
+.nomeMarca .tex777{
+    font-size: .5em;
+    margin-left: 6px;
+}
+.cntrClassItens{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.cntrClassItens p{
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: black;
+    padding: 0px 10px;
+    min-width: fit-content;
+    cursor: pointer;
+}
+.cntrBtnsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0px;
+    z-index: 2;
+    border-radius: 10px;
+}
+.cntrBtnsHeader a,
+.cntrBtnsHeader button{
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: black;
+    padding: 0px 20px;
+    border-right: 1px solid black;
+    min-width: fit-content;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cntrBtnsHeader span {
+    padding: 0px 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.cntrBtnsHeader span button{
+    border-right: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 10px;
+
+}
+.cntrBtnsHeader span button svg{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.cntrBtnsHeader a:nth-child(3){
+    border-right: none;
+}
+
+
+.banner{
+    background-color: #e3e3e1;
+    width: 100%;
+    max-height: 526px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cntrLeft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cntrRight{
+    min-width: 467px;
+    position: relative;
+
+}
+.cntrRight img{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+
+main{
+    
+}
+
+
+.confiraAsNovidades{
+    padding: 40px 30px;
+    width: 100%;
+    text-align: center;
+
+}
+.cntrGridProdutos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+.cntrBoxItens{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+
+.boxItens,
+.boxItensBanner{
+    height: 100%;
+    position: relative;
+    margin: 10px 12px;
+    background-color: #ddd;
+}
+.cntrTag{
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    color: white;
+    padding: 8px 12px;
+    font-size: .9em;
+    left: -10px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+
+
+
+
+.boxItensBannerMotivosPraComprar{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxItensBannerMotivosPraComprar p{
+    background-color: #D9D9D9;
+    padding: 10px;
+    width: 48.2632%;
+    height: 22.54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.boxItensBannerMotivosPraComprar p:first-child{
+    width: 100%;
+}
+.boxItensBannerMotivosPraComprar p:last-child,
+.boxItensBannerMotivosPraComprar p:nth-last-child(2){
+    margin-bottom: 0px;
+}
+
+.boxItensBannerMotivosPraComprar p:nth-last-child(5),
+.boxItensBannerMotivosPraComprar p:nth-last-child(3),
+.boxItensBannerMotivosPraComprar p:nth-last-child(1){
+    margin-left: 10px;
+}
+
+
+
+
+.boxItens img,
+.boxItensBanner img{
+    width: 100%;
+    height: 100%;
+}
+
+.cntrGridProdutosECntrBanner{
+    display: flex;
+}
+.cntrBanner3{
+    display: none;
+}
+
+@media only screen and (max-width : 1236px){
+    .cntrBoxItens{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width : 950px){
+    .cntrBoxItens{
+        width: 50%;
+    }
+    .cntrGridProdutos {
+        justify-content: space-evenly;
+    }
+
+
+    .cntrBanner{
+        min-width: 33%;
+    }
+    .cntrBoxItensBanner{
+        min-width: 66%;
+    }
+}
+
+@media only screen and (max-width : 750px){
+    .cntrBoxItens{
+        width: 50%;
+    }
+
+    .cntrGridProdutosComBanner{
+        flex-direction: column;
+        width: 100%;
+    }
+    .cntrBanner{
+        min-width: 100%;
+    }
+    .cntrBoxItensBanner{
+        min-width: 100%;
+    }
+    .cntrGridProdutosComBanner2{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+.cntrGridProdutosComBanner{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.cntrBanner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1e1e1e;
+    margin: 10px;
+    overflow: hidden;
+}
+.cntrBanner img{
+    width: 100%;
+    background-color: white;
+}
+.cntrBanner p{
+    color: wheat;
+    border: 2px solid rgba(245, 222, 179, 0.2);
+    margin: 10px 14px;
+    padding: 14px;
+    text-align: center;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.cntrBanner p:nth-child(2){
+    margin-top: -10px;
+}
+
+.cntrBoxItensBanner{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cntrBoxItensBannerLine1,
+.cntrBoxItensBannerLine2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0px;
+
+}
+.boxItensBanner{
+    width: 50%;
+}
+
+
+
+
+.cntrGridProdutosComBannerInvisible{
+}
+.cntrGridProdutosComBannerInvisible .cntrBanner{
+    display: none;
+}
+.cntrGridProdutosComBannerInvisible .cntrBoxItensBanner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.cntrGridProdutosComBannerInvisible .cntrBoxItensBannerLine1,
+.cntrGridProdutosComBannerInvisible .cntrBoxItensBannerLine2{
+}
+
+
+
+@media only screen and (max-width : 950px){
+    .cntrGridProdutosComBannerInvisible .cntrBanner{
+        display: flex;
+    }
+    .cntrGridProdutosComBannerInvisible .cntrBoxItensBanner{
+        flex-direction: column;
+        width: 100%;
+    }
+    .boxItensBannerMotivosPraComprar{
+        display: none;
+    }
+
+
+}
+
+
+
+
